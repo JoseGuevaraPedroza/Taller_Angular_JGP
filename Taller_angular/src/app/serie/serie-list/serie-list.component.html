@@ -1,0 +1,19 @@
+<table class="table table-light">
+    <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Nombre</th>
+            <th scope="col">Canal</th>
+            <th scope="col">Temporadas</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let item of series">
+            <td> {{item.id}} </td>
+            <td> <a href="{{item.webpage}}">{{item.name}}</a> </td>
+            <td> {{item.channel}} </td>
+            <td> {{item.seasons}} </td>
+        </tr>
+    </tbody>
+</table>
+<p>promedio de Temporadas: {{calcularPromedioTemporadas()}}</p>
